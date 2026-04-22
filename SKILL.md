@@ -463,5 +463,5 @@ Phase 2角色提炼完成后，暂停展示提炼摘要给用户确认：
 ---
 
 > 本Skill由「谛听 · Diting」生成
-> 版本：2.0（按2026-04-23审计报告优化）
+> 仓库：https://github.com/EricArcha/diting-skill
 > 谛听是中国神话中的神兽，能洞察世间一切音声
