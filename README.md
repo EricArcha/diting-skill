@@ -1,33 +1,31 @@
-# Ditng · Fictional Character Distillation
+# 谛听 · 虚构角色蒸馏
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![ Topics: ai-skill](https://img.shields.io/github/topics/ai-skill?style=flat)](https://github.com/topics/ai-skill)
-[![ Topics: character-persona](https://img.shields.io/github/topics/character-persona?style=flat)](https://github.com/topics/character-persona)
 
-> "Insight into the soul of a character, awakening those who dwell in dreams."
+> 「洞察角色灵魂，唤醒梦中之人。」
 
-Ditng is a Claude Code skill that extracts character configurations from fiction—literature, film, anime—and generates activatable character skills for immersive roleplaying.
+谛听是一个 Claude Code Skill，能从文学、影视、动漫等虚构作品中提取角色设定，生成可激活的角色Skill，实现沉浸式角色扮演。
 
-[**Read this in 中文**](README_zh.md)
+[**Read this in English**](README_en.md)
 
 ---
 
-## Quick Start
+## 快速开始
 
-### Installation (Terminal)
+### 安装（终端）
 
 ```bash
 git clone https://github.com/EricArcha/diting-skill.git ~/.claude/skills/diting
 ```
 
-Or manual:
+或手动复制：
 ```bash
 cp -r diting ~/.claude/skills/
 ```
 
-### Activation
+### 激活
 
-Restart Claude Code or type `/skills reload`, then:
+重启 Claude Code 或输入 `/skills reload`，然后：
 
 | 中文 | English |
 |------|---------|
@@ -37,55 +35,55 @@ Restart Claude Code or type `/skills reload`, then:
 
 ---
 
-## Usage in Claude Code / OpenClaw
+## 在 Claude Code / OpenClaw 中使用
 
-### Starting a New Distillation
+### 开始新的蒸馏
 
 ```
 你：「造一个孙悟空角色」
-Ditng：「明白了。请确认：作品来源？（西游记/大话西游/其他）切片？（取经路上/大闹天宫）」
+谛听：「明白了。请确认：作品来源？（西游记/大话西游/其他）切片？（取经路上/大闹天宫）」
 你：「按默认来」
-Ditng：「好，开始六路并行调研...」
+谛听：「好，开始六路并行调研...」
 ```
 
-### Activating an Existing Character
+### 激活已创建的角色
 
 ```
 你：「让悟空来回答这个问题」
 悟空：「俺老孙来了！这个问题嘛...」
 ```
 
-### Workflow
+### 工作流程
 
-1. **Phase 0-0.5**: Confirm character details, create skill directory
-2. **Phase 1**: Six parallel agents research source material
-3. **Phase 1.5**: Review checkpoint (shows research quality summary)
-4. **Phase 2**: Extract character traits, generate SKILL.md
-5. **Phase 2.5**: Extraction checkpoint (confirm before building)
-6. **Phase 3**: Quality verification (line test, scene test, boundary test)
-7. **Phase 4**: Optional refinement (user-triggered with "精炼此角色Skill")
-
----
-
-## Core Concepts
-
-Ditng doesn't copy characters—it **extracts performance scripts**.
-
-| Component | Description |
-|-----------|-------------|
-| **Identity & Core Contradiction** | Who is this character? |
-| **Core Traits** | 3-7 key characteristics |
-| **Behavioral Patterns** | 5-10 ways they act |
-| **Speech DNA** | How they talk |
-| **Performance Boundaries** | What they won't do |
-
-**Key distinction**: Captures HOW they behave, not WHAT they say.
+1. **Phase 0-0.5**：确认角色信息，创建skill目录
+2. **Phase 1**：六路并行Agent调研原著材料
+3. **Phase 1.5**：调研Review检查点（展示质量摘要）
+4. **Phase 2**：提炼角色特质，生成SKILL.md
+5. **Phase 2.5**：提炼确认检查点（构建前确认）
+6. **Phase 3**：质量验证（台词测试、场景测试、边界测试）
+7. **Phase 4**：可选精炼（用户说"精炼此角色Skill"触发）
 
 ---
 
-## Trigger Words
+## 核心概念
 
-### Activate Ditng
+谛听不是复制角色，是**提炼表演脚本**。
+
+| 组件 | 描述 |
+|------|------|
+| **身份与核心矛盾** | 这个角色是谁？ |
+| **核心特质** | 3-7个关键特征 |
+| **行为模式** | 5-10种行动方式 |
+| **台词DNA** | 怎么说话 |
+| **表演边界** | 不会做什么 |
+
+**关键区分**：捕捉的是 HOW they behave，不是 WHAT they say。
+
+---
+
+## 触发词
+
+### 启动谛听
 
 | 中文 | English |
 |------|---------|
@@ -95,7 +93,7 @@ Ditng doesn't copy characters—it **extracts performance scripts**.
 | 「做个XX的角色skill」 | "make an XX character skill" |
 | 「角色扮演」 | "character roleplay" |
 
-### Activate Existing Characters
+### 激活已创建的角色
 
 | 中文 | English |
 |------|---------|
@@ -106,72 +104,72 @@ Ditng doesn't copy characters—it **extracts performance scripts**.
 
 ---
 
-## Relationship with Nuwa and Mengdie
+## 与女娲和梦蝶的关系
 
-| Skill | Purpose | Project |
-|-------|---------|---------|
-| [Nuwa](https://github.com/alchaincyf/nuwa-skill) | Distill real people's thinking patterns | Independent |
-| Ditng | Distill fictional characters' performance style | This project |
-| [Mengdie](https://github.com/EricArcha/mengdie-skill) | Multi-perspective discussion orchestration | This project |
+| Skill | 定位 | 项目 |
+|-------|------|------|
+| [女娲](https://github.com/alchaincyf/nuwa-skill) | 蒸馏真实人物的思维方式 | 独立项目 |
+| 谛听 | 蒸馏虚构角色的表演风格 | 本项目 |
+| [梦蝶](https://github.com/EricArcha/mengdie-skill) | 多视角讨论编排层 | 本项目 |
 
-| | Nuwa | Ditng |
+| | 女娲 | 谛听 |
 |---|---|---|
-| Captures | HOW they think | HOW they behave |
-| Source | Real people | Fictional characters |
-| Output | Thinking framework | Performance script |
+| 捕捉 | HOW they think | HOW they behave |
+| 来源 | 真实人物 | 虚构角色 |
+| 输出 | 思维框架 | 表演脚本 |
 
 ---
 
-## Quality Standards
+## 质量标准
 
-| Checkpoint | Standard |
-|------------|----------|
-| Core Traits | 3-7, each with source evidence |
-| Speech DNA | Recognizable—reading lines identifies the character |
-| Performance Boundaries | At least 3 specific boundaries |
-| Relationship Dynamics | All major relationships described |
-| Timeline Slice | Clear start/end with key turning points |
-
----
-
-## Taste Principles
-
-| Principle | One-liner |
-|-----------|----------|
-| Original > Adaptation | Character based on original work; adaptations as supplement |
-| Behavior > Dialogue | Behavioral patterns reveal character more than words |
-| Contradiction > Perfection | Keep internal contradictions—they're where depth comes from |
-| Boundaries > Ambiguity | Performance boundaries must be clear, not vague |
-
-### Never Do
-- Fabricate lines the character never said
-- Package generic personality as the character's "unique trait"
-- Ignore negative traits and limitations
-- Force-generate complete settings with insufficient information
+| 检查项 | 通过标准 |
+|--------|---------|
+| 核心特质 | 3-7个，每个有来源证据 |
+| 台词DNA | 读台词能认出是哪个角色 |
+| 表演边界 | 至少3条具体边界 |
+| 关系动态 | 与主要角色的关系都有描述 |
+| 时间线切片 | 切片起止清晰，有关键转折点 |
 
 ---
 
-## Directory Structure
+## 品味守则
+
+| 原则 | 一句话 |
+|------|--------|
+| 原著 > 改编 | 角色以原著表现为准，改编版本作为补充 |
+| 行为 > 台词 | 行为模式比台词更能揭示角色本质 |
+| 矛盾 > 完美 | 保留角色的内在矛盾，这正是角色的深度所在 |
+| 边界 > 模糊 | 表演边界要清晰，不能模棱两可 |
+
+### 绝不做的事
+- 编造角色没说过的话
+- 把通用性格包装成角色的「独特特质」
+- 忽略角色的负面特质和局限
+- 在信息不足时强行生成完整设定
+
+---
+
+## 目录结构
 
 ```
 diting/
-├── SKILL.md                    # Main skill file
-├── GOVERNANCE.md               # Governance index
-├── README.md                   # This file
-├── README_zh.md                # Chinese version
+├── SKILL.md                    # 主Skill文件
+├── GOVERNANCE.md               # 治理索引
+├── README.md                   # 中文说明
+├── README_en.md               # English version
 ├── references/
-│   ├── extraction-framework.md # Extraction methodology
-│   ├── character-template.md   # SKILL.md generation template
-│   └── source-analysis/        # Agent research output templates
+│   ├── extraction-framework.md # 提炼方法论
+│   ├── character-template.md   # SKILL.md生成模板
+│   └── source-analysis/        # Agent调研输出模板
 └── examples/
-    └── wukong-journey/        # Sun Wukong during journey (example)
+    └── wukong-journey/        # 取经路上的悟空（示例）
 ```
 
 ---
 
-## Contributing
+## 贡献指南
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+参见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 ---
 
