@@ -2,7 +2,8 @@
 name: diting
 description: |
   谛听：虚构角色蒸馏Skill。从文学/影视/动漫作品中提取角色设定，生成可激活的角色Skill。
-  触发词：「造一个XX角色」「谛听，造一个XX」「蒸馏XX角色」「做个XX的角色skill」「角色扮演」。
+  触发词：「造一个XX角色」「谛听，造一个XX」「蒸馏XX角色」「做个XX的角色skill」「角色扮演」
+  "create an XX character" "distill XX character" "make an XX character skill" "character roleplay"
 ---
 
 # 谛听 · 虚构角色蒸馏
@@ -432,18 +433,32 @@ Phase 2角色提炼完成后，暂停展示提炼摘要给用户确认：
 
 ### 主触发词（启动谛听）
 
+**中文：**
 - 「造一个XX角色」
 - 「创建一个XX角色」
 - 「蒸馏XX角色」
 - 「谛听，造一个XX」
 - 「做个XX的角色skill」
 
+**English：**
+- "create an XX character"
+- "distill an XX character"
+- "make an XX character skill"
+- "I want to create a character"
+- "character roleplay"
+
 ### 激活已创建角色的触发词
 
+**中文：**
 - 直接喊名字：「孙悟空」「悟空」「猴哥」
 - 召唤式：「让悟空来回答」「悟空，你怎么看」
 - 假设式：「如果悟空来处理这个事」「用悟空的视角」
 - 「XX会觉得...」「XX会怎么说」
+
+**English：**
+- By name: "Sun Wukong" "Wukong" "let Wukong answer"
+- Summon: "if Wukong handled this" "from Wukong's perspective"
+- "what would XX think" "how would XX respond"
 
 ---
 
