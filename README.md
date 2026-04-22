@@ -1,64 +1,125 @@
-# 谛听 (DITING)
+# Ditng · Fictional Character Distillation
 
-虚构角色蒸馏Skill。从文学、影视、动漫作品中提取角色设定，生成可激活的角色Skill。
+> "Insight into the soul of a character, awakening those who dwell in dreams."
 
-## 核心定位
+Ditng is a Claude Code skill that extracts character configurations from fiction—literature, film, anime—and generates activatable character skills for immersive roleplaying.
 
-谛听是中国神话中的神兽，能洞察世间一切音声。借以此名，寓意「洞察角色灵魂」。
+[**Read this in 中文**](README_zh.md)
 
-谛听的核心使命是：从虚构作品中提取角色设定，生成可激活的角色Skill，达成沉浸式角色扮演。
+---
 
-## 与女娲和梦蝶的关系
+## Quick Start
 
-| Skill | 定位 | 项目 |
-|-------|------|------|
-| 女娲 (nuwa) | 蒸馏真实人物的思维方式 | 独立项目（alchaincyf/nuwa-skill） |
-| 谛听 (diting) | 蒸馏虚构角色的表演风格 | 本项目 |
-| 梦蝶 (mengdie) | Skill编排层，调用上述Skill进行讨论 | 本项目 |
+### Trigger Words
 
-谛听的设计思路借鉴了女娲的六路Agent调研和检查点机制，但核心差异：
-- 女娲：捕捉 HOW they think（思维方式）
-- 谛听：捕捉 HOW they behave（表演风格）
+**Activate Ditng:**
+- 「造一个XX角色」Create an XX character
+- 「谛听，造一个XX」Ditng, create an XX
+- 「蒸馏XX角色」Distill XX character
+- 「做个XX的角色skill」Make an XX character skill
 
-## 快速开始
+**Activate existing characters:**
+- By name: 「孙悟空」「悟空」「猴哥」Sun Wukong
+- Summon: 「让悟空来回答」Let Wukong answer
+- Hypothetical: 「如果悟空来处理这个事」If Wukong handled this
 
-### 触发词
+### Installation
 
-启动谛听：
-- 「造一个XX角色」
-- 「谛听，造一个XX」
-- 「蒸馏XX角色」
-- 「做个XX的角色skill」
+1. Copy the `diting/` directory to your `.claude/skills/` folder:
+   ```bash
+   cp -r diting ~/.claude/skills/
+   ```
 
-激活已创建角色：
-- 直接喊名字：「孙悟空」「悟空」「猴哥」
-- 召唤式：「让悟空来回答」「悟空，你怎么看」
-- 假设式：「如果悟空来处理这个事」
+2. Restart Claude Code or type `/skills reload`
 
-## 执行流程
+3. Say: 「造一个XX角色」to start distilling
 
-| Phase | 内容 | 关键动作 |
-|-------|------|---------|
-| 0 | 需求澄清 | 判断直接路径/模糊路径 |
-| 0.5 | 创建Skill目录 | 创建目录结构，**切片命名规范已内联** |
-| 1 | 六路并行调研 | 原著文本、表演风格、关系网络、成长弧线、同人分析、台词DNA |
-| 1.5 | 调研Review检查点 | **表格格式已内联** |
-| 2 | 角色提炼与SKILL.md合成 | 读取调研文件，生成角色Skill |
-| 2.5 | 提炼确认检查点 | **格式已内联** |
-| 3 | 质量验证 | 台词测试、场景测试、边界测试 |
-| 4 | 精炼（用户触发） | 用户说「精炼此角色Skill」时启动 |
+---
 
-## 目录结构
+## Core Concepts
+
+Ditng doesn't copy characters—it **extracts performance scripts**.
+
+A good character skill is a runnable performance operating system:
+- **Identity & Core Contradiction**: Who is this character?
+- **Core Traits**: 3-7 key characteristics
+- **Behavioral Patterns**: 5-10 ways they act
+- **Speech DNA**: How they talk
+- **Performance Boundaries**: What they won't do
+
+**Key distinction**: Captures HOW they behave, not WHAT they say.
+
+---
+
+## Execution Flow
+
+| Phase | Content | Key Actions |
+|-------|---------|-------------|
+| 0 | Requirement Clarification | Direct path / Diagnostic path |
+| 0.5 | Create Skill Directory | Structure + naming conventions |
+| 1 | Six-Track Agent Research | Parallel调研：text, performance, relationships, arc, fan analysis, speech DNA |
+| 1.5 | Research Review Checkpoint | Display quality summary for user confirmation |
+| 2 | Character Extraction & SKILL.md Synthesis | Read research files, generate character skill |
+| 2.5 | Extraction Confirmation Checkpoint | Display extraction summary for user confirmation |
+| 3 | Quality Verification | Line test, scene test, boundary test |
+| 4 | Refinement (user-triggered) | Activated when user says "精炼此角色Skill" |
+
+---
+
+## Relationship with Nuwa and Mengdie
+
+| Skill | Purpose | Project |
+|-------|---------|---------|
+| Nuwa | Distill real people's thinking patterns | Independent (alchaincyf/nuwa-skill) |
+| Ditng | Distill fictional characters' performance style | This project |
+| Mengdie | Skill orchestration layer for multi-perspective discussion | This project |
+
+Ditng's design borrows from Nuwa's six-track agent research and checkpoint mechanisms, but with a core difference:
+- **Nuwa**: Captures HOW they think
+- **Ditng**: Captures HOW they behave
+
+---
+
+## Quality Standards
+
+| Checkpoint | Standard |
+|------------|----------|
+| Core Traits | 3-7, each with source evidence |
+| Speech DNA | Recognizable—reading lines identifies the character |
+| Performance Boundaries | At least 3 specific boundaries |
+| Relationship Dynamics | All major relationships described |
+| Timeline Slice | Clear start/end with key turning points |
+
+---
+
+## Taste Principles
+
+| Principle | One-liner |
+|-----------|----------|
+| Original > Adaptation | Character based on original work; adaptations as supplement |
+| Behavior > Dialogue | Behavioral patterns reveal character more than words |
+| Contradiction > Perfection | Keep internal contradictions—they're where depth comes from |
+| Boundaries > Ambiguity | Performance boundaries must be clear, not vague |
+
+### Never Do
+- Fabricate lines the character never said
+- Package generic personality as the character's "unique trait"
+- Ignore negative traits and limitations
+- Force-generate complete settings with insufficient information
+
+---
+
+## Directory Structure
 
 ```
 diting/
-├── SKILL.md                    # 主Skill文件（执行标准）
-├── GOVERNANCE.md               # 治理索引（已精简）
-├── README.md                   # 本文件
+├── SKILL.md                    # Main skill file (execution standard)
+├── GOVERNANCE.md               # Governance index (streamlined)
+├── README.md                   # This file
 ├── references/
-│   ├── extraction-framework.md # 提炼方法论
-│   ├── character-template.md    # SKILL.md生成模板
-│   └── source-analysis/        # Agent调研输出模板
+│   ├── extraction-framework.md # Extraction methodology
+│   ├── character-template.md   # SKILL.md generation template
+│   └── source-analysis/        # Agent research output templates
 │       ├── 01-canonical-text.md
 │       ├── 02-performance-style.md
 │       ├── 03-relationship-map.md
@@ -66,30 +127,11 @@ diting/
 │       ├── 05-fan-analysis.md
 │       └── 06-expression-dna.md
 └── examples/
-    └── wukong-journey/        # 取经路上的悟空（示例）
+    └── wukong-journey/        # Sun Wukong during journey (example)
 ```
-
-## 质量标准
-
-| 检查项 | 通过标准 |
-|--------|---------|
-| 核心特质 | 3-7个，每个有来源证据 |
-| 台词DNA | 读台词能认出是哪个角色 |
-| 表演边界 | 至少3条具体边界 |
-| 关系动态 | 与主要角色的关系都有描述 |
-| 时间线切片 | 切片起止清晰，有关键转折点 |
-
-## 品味守则
-
-| 原则 | 一句话 |
-|------|--------|
-| 原著 > 改编 | 角色以原著表现为准 |
-| 行为 > 台词 | 行为模式比台词更能揭示角色本质 |
-| 矛盾 > 完美 | 保留角色的内在矛盾 |
-| 边界 > 模糊 | 表演边界要清晰 |
 
 ---
 
-> 本文档对应 SKILL.md v2.0
-> 版本：2.0
-> 最后更新：2026-04-23
+## License
+
+MIT
