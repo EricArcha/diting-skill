@@ -142,7 +142,7 @@ description: |
 
 ---
 
-> 本Skill由「谛听 · Ditng」生成
+> 本Skill由「谛听 · Diting」生成
 > 生成日期：[日期]
 ```
 
@@ -246,5 +246,5 @@ description: |
 
 ---
 
-> 本模板由「谛听 · Ditng」制定
+> 本模板由「谛听 · Diting」制定
 > 版本：1.0

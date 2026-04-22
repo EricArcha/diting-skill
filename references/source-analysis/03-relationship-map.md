@@ -40,4 +40,4 @@
 
 ---
 
-> 本分析由「谛听 · Ditng」Agent 3 生成
+> 本分析由「谛听 · Diting」Agent 3 生成

@@ -220,5 +220,5 @@ description: |
 
 ---
 
-> 本Skill由「谛听 · Ditng」生成
+> 本Skill由「谛听 · Diting」生成
 > 生成日期：2026-04-22

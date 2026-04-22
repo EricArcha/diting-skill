@@ -1,11 +1,11 @@
-# Ditng · Fictional Character Distillation
+# Diting · Fictional Character Distillation
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Claude Code Skill](https://img.shields.io/badge/Claude%20Code-Skill-7B68EE?style=flat)](https://claude.com/claude-code)
 
 > "Insight into the soul of a character, awakening those who dwell in dreams."
 
-Ditng is a Claude Code skill that extracts character configurations from fiction—literature, film, anime—and generates activatable character skills for immersive roleplaying.
+Diting is a Claude Code skill that extracts character configurations from fiction—literature, film, anime—and generates activatable character skills for immersive roleplaying.
 
 [**Read this in 中文**](README.md)
 
@@ -42,9 +42,9 @@ Restart Claude Code or type `/skills reload`, then:
 
 ```
 你：「造一个孙悟空角色」
-Ditng：「明白了。请确认：作品来源？（西游记/大话西游/其他）切片？（取经路上/大闹天宫）」
+Diting：「明白了。请确认：作品来源？（西游记/大话西游/其他）切片？（取经路上/大闹天宫）」
 你：「按默认来」
-Ditng：「好，开始六路并行调研...」
+Diting：「好，开始六路并行调研...」
 ```
 
 ### Activating an Existing Character
@@ -68,7 +68,7 @@ Ditng：「好，开始六路并行调研...」
 
 ## Core Concepts
 
-Ditng doesn't copy characters—it **extracts performance scripts**.
+Diting doesn't copy characters—it **extracts performance scripts**.
 
 | Component | Description |
 |-----------|-------------|
@@ -84,7 +84,7 @@ Ditng doesn't copy characters—it **extracts performance scripts**.
 
 ## Trigger Words
 
-### Activate Ditng
+### Activate Diting
 
 | 中文 | English |
 |------|---------|
@@ -110,10 +110,10 @@ Ditng doesn't copy characters—it **extracts performance scripts**.
 | Skill | Purpose | Project |
 |-------|---------|---------|
 | [Nuwa](https://github.com/alchaincyf/nuwa-skill) | Distill real people's thinking patterns | Independent |
-| Ditng | Distill fictional characters' performance style | This project |
+| Diting | Distill fictional characters' performance style | This project |
 | [Mengdie](https://github.com/EricArcha/mengdie-skill) | Multi-perspective discussion orchestration | This project |
 
-| | Nuwa | Ditng |
+| | Nuwa | Diting |
 |---|---|---|
 | Captures | HOW they think | HOW they behave |
 | Source | Real people | Fictional characters |

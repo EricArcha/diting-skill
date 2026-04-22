@@ -1,6 +1,7 @@
 # 谛听 · 虚构角色蒸馏
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Claude Code Skill](https://img.shields.io/badge/Claude%20Code-Skill-7B68EE?style=flat)](https://claude.com/claude-code)
 
 > 「洞察角色灵魂，唤醒梦中之人。」
 

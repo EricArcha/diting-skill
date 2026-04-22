@@ -1,6 +1,6 @@
-# Contributing to Ditng
+# Contributing to Diting
 
-Welcome! Ditng is an open-source Claude Code skill for fictional character distillation.
+Welcome! Diting is an open-source Claude Code skill for fictional character distillation.
 
 ## How to Contribute
 
@@ -23,7 +23,7 @@ Welcome! Ditng is an open-source Claude Code skill for fictional character disti
 - Update both English and Chinese README when relevant
 
 ### Adding New Character Skills
-When you create a new character skill using Ditng:
+When you create a new character skill using Diting:
 - Place it in `.claude/skills/` with the naming convention `[character-name]-[slice-id]`
 - Include all 6 research files in `references/`
 - Follow the quality standards (3-7 traits, 5-10 behavioral patterns, 3+ boundaries)
